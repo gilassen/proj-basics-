@@ -1,0 +1,77 @@
+
+.watcher-app{
+  background:#eaf1fb;              
+  border-radius:12px;
+  padding:1rem 1.25rem;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+.watcher-app h2{
+  color:#1e3a8a;                   
+  margin-top:.25rem;
+}
+
+.watcher-app button{
+  background:#2563eb;            
+  color:#fff;
+  border:1px solid transparent;
+  border-radius:8px;
+  padding:.5rem .85rem;
+}
+.watcher-app button:hover{ background:#1d4ed8; }
+
+.watcher-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:18px;
+  margin-top:.5rem;
+}
+
+.watcher-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:1rem;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  position:relative;
+}
+.watcher-card h3{
+  margin:.5rem 0 1rem;
+  color:#0f172a;                
+}
+
+.watcher-card::before{
+  content:"";
+  position:absolute; top:0; left:0; right:0; height:6px;
+  border-radius:12px 12px 0 0;
+  background:linear-gradient(90deg,#2563eb,#0ea5e9); 
+}
+
+.actions{
+  display:flex; justify-content:center; gap:.5rem;
+  padding-top:.75rem; border-top:1px solid #e5e7eb;
+}
+
+.actions button:first-child{
+  background:#fee2e2; color:#991b1b; border:1px solid #fecaca;
+}
+.actions button:first-child:hover{ background:#fecaca; }
+
+/* Modal */
+.modal-backdrop{
+  position:fixed; inset:0; background:rgba(0,0,0,.55);
+  display:flex; align-items:center; justify-content:center;
+  padding:1rem; z-index:1000;
+}
+.modal{
+  background:#fff; width:min(520px,95vw);
+  border-radius:12px; padding:1rem 1.25rem;
+  box-shadow:0 16px 40px rgba(0,0,0,.2);
+  border:1px solid #e5e7eb;
+}
+.modal h3{ margin-top:0; color:#1e40af; }
+
+.movies{ margin:.5rem 0 1rem; padding-left:1.25rem; list-style:disc; }
+.movies li{ margin:.2rem 0; }
+.empty{ color:#6b7280; font-style:italic; }

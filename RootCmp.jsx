@@ -4,6 +4,7 @@ import { AppHeader } from "./cmps/AppHeader.jsx"
 import { Home } from "./cmps/Home.jsx"
 import { SeasonClock } from "./cmps/season-clock.jsx"
 import { CountDown } from "./cmps/count-down.jsx"
+import { WatcherApp } from "./cmps/watcher-app.jsx"
 
 export function RootCmp() {
     return (
@@ -17,11 +18,12 @@ export function RootCmp() {
                     { type: 'Fin Whale', count: 28 }
                     ]} /> */}
 
-                <SeasonClock />
+                {/* <SeasonClock /> */}
                 {/* {<CountDown startFrom={10} onDone={()=>{console.log('Done!')}} /> } */}
-                {/* <CountDown toTime={Date.now() + 1000*10} onDone={()=>{ 
+                {/* <CountDown toTime={Date.now() + 1000*100} onDone={()=>{ 
                     console.log('Its Time!') 
                 }} />  */}
+                <WatcherApp/>
             </main>
         </section>
     )
