@@ -1,0 +1,37 @@
+.animal-list {
+  max-width: 560px;
+  margin: 2rem auto;
+  padding: 1.25rem 1.5rem;
+  background: var(--clr1bg-light);
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+}
+
+.animal-list h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--clr1);
+}
+
+.animal-list table {
+  width: auto;          
+  margin: 0 auto;      
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.animal-list td {
+  padding: .85rem 1.25rem;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.animal-list tr:last-child td { border-bottom: none; }
+
+.animal-list td.name  { text-align: left;  }
+.animal-list td.count { text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; min-width: 4ch; }
+.animal-list td.link  { text-align: right; padding-right: 0; }
+
+.animal-list a { font-weight: 700; color: var(--clr2); }
+.animal-list a:hover { text-decoration: underline; color: var(--clr1); }

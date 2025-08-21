@@ -1,0 +1,44 @@
+.season-clock.winter.light { background-color: #b3e0ff; }
+.season-clock.winter.dark  { background-color: #00334d; }
+
+.season-clock.spring.light { background-color: #b3ffcc; }
+.season-clock.spring.dark  { background-color: #006633; }
+
+.season-clock.summer.light { background-color: #fff2b3; }
+.season-clock.summer.dark  { background-color: #665500; }
+
+.season-clock.autumn.light { background-color: #ffd9b3; }
+.season-clock.autumn.dark  { background-color: #663300; }
+
+.season-clock {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: clamp(1rem, 3vw, 2.25rem);
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  transition: background-color .5s ease, color .2s ease;
+
+  display: flex;
+  flex-direction: column;     
+  align-items: center;
+  justify-content: center;
+  gap: clamp(.5rem, 2vw, 1rem);
+  text-align: center;
+}
+
+.season-clock.light { color: #1b1b1b; }
+.season-clock.dark  { color: #f2f2f2; }
+
+.season-clock .clock-icon {
+  width: clamp(64px, 12vw, 120px);
+  height: auto;
+  opacity: .9;
+}
+
+.season-clock .time {
+  margin: .25rem 0 0;         
+  line-height: 1;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
