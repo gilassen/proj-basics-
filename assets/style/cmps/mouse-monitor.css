@@ -1,0 +1,67 @@
+.MouseMonitor {
+  position: fixed;
+  left: 16px;
+  right: auto;
+  bottom: 16px;
+  min-width: 220px;
+  max-width: 280px;
+
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.35;
+  z-index: 1000;
+}
+
+.MouseMonitor h3,
+.MouseMonitor > div {
+  text-align: center;
+}
+
+.MouseMonitor h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  color: #cfd3d8;
+}
+
+.MouseMonitor > div {
+  margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  color: #e9edf3;
+}
+
+.MouseMonitor button {
+  appearance: none;
+  border: 1px solid #2a2f36;
+  background: #1a1f27;
+  color: #e9edf3;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.MouseMonitor button:hover {
+  background: #212734;
+  border-color: #384151;
+  transform: translateY(-1px);
+}
+
+.MouseMonitor button:active {
+  transform: translateY(0);
+}
+
+.MouseMonitor button:focus-visible {
+  outline: 2px solid #6aa7ff;
+  outline-offset: 2px;
+}
+
