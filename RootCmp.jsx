@@ -21,11 +21,11 @@ export function RootCmp() {
 
                 {/* <SeasonClock /> */}
                 {/* {<CountDown startFrom={10} onDone={()=>{console.log('Done!')}} /> } */}
-                {/* <CountDown toTime={Date.now() + 1000*100} onDone={()=>{ 
+                <CountDown toTime={Date.now() + 1000*10} onDone={()=>{ 
                     console.log('Its Time!') 
-                }} />  */}
+                }} /> 
                 {/* <WatcherApp/> */}
-                {<MouseMonitor/>}
+                {/* {<MouseMonitor/>} */}
             </main>
         </section>
     )

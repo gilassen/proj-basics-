@@ -5,7 +5,7 @@
 @import "./cmps/season-clock.css";
 @import "./cmps/watcher-app.css";
 @import "./cmps/mouse-monitor.css";
-
+@import "./cmps/count-down.css";
 
 /* Vars */
 :root {
@@ -221,11 +221,3 @@ a.active {
 
 
 
-.count {
-  color: #111;
-  transition: color 0.2s ease;
-}
-
-.count.danger {
-  color: red;
-}

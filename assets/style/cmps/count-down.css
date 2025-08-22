@@ -1,0 +1,21 @@
+.count-down {
+  display: grid;
+  place-items: center;
+  min-width: 6rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: #f7f7f8;
+}
+
+.count {
+  color: #111;
+  font: 700 3rem/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.count.danger {
+  color: red;            
+  animation: pulse 0.8s infinite;
+}
+
